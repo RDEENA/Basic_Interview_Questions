@@ -179,3 +179,28 @@ int main()
   * * * 
     * * 
       * 
+==========================================================================================================
+Java program to print n*n box
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int i, j;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            System.out.print("* ");
+        }
+    }
+=================================================
+Python program to print hollow box
+
+n = int(input())
+for i in range(n):
+      for j in range(n):
+          if i==0 or i==n-1 or j==0 or j==n-1:
+              print("*",end=" ")
+          else:
+              print(" ",end=" ")
+      print()
